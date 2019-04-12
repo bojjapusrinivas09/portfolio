@@ -1,0 +1,407 @@
+
+
+
+/*==================
+	TOP STRIP	
+===================*/
+.top_strip {
+	background: #000;
+	min-height: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position:fixed;
+	width:100%;
+	z-index:100;
+}
+.top_strip a {
+	color: #fff;
+}
+.top_strip .nav_toggle_open {
+	font-size: 25px;
+	margin: 10px 10px;
+	display: none;
+}
+.top_strip .nav_toggle_close {
+	font-size: 15px;
+	margin: 10px 10px;
+}
+/*--- FOR DESKTOP ---*/
+.side_bar {
+	position: relative;
+	float: right;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+	height: auto;
+}
+.side_bar .nav_list {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+.side_bar .nav_list li {
+	float: left;
+	margin: 0px 10px;
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight:400;
+}
+.side_bar .nav_list li a {
+	color: #BFBFBF;
+	transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	border-bottom: #000 solid 3px;
+}
+.side_bar .nav_list li a:hover {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: #99CC66 solid 3px;
+	transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+}
+.side_bar .side_nav_top_pan {
+	margin: 4px 10px;
+	width: 100%;
+	text-align: center;
+	display: none;
+}
+
+/*==================
+	BANNER
+===================*/
+
+.banner_block {
+	background: url(../IMG/bann_bg.jpg) no-repeat;
+	background-size: cover;
+	opacity: 1;
+	padding-top:30px;	
+}
+.green_shade {
+	height: auto;
+	min-height: 500px;
+	background: rgba(147,199,101,0.8);
+}
+.banner_block h1 {
+	font-size: 60px;
+	font-weight: 300;
+	margin: 0px;
+}
+.banner_block h3 {
+	font-size: 50px;
+	font-weight: 100;
+	margin-bottom: 10px;
+	margin: 0px;
+}
+.strip {
+	box-sizing: border-box;
+	padding: 10px;
+	position: relative;
+	height: 60px;
+}
+.strip ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.strip ul li {
+	color: #231F20;
+	font-size: 28px;
+	font-weight: 300;
+}
+.strip ul li:after {
+	content: "\f30f";
+    font-family: "Ionicons";
+    color: #93C765;
+    font-size: 26px;
+    position: absolute;
+    right: -7px;
+    top: 2px;
+    font-weight: 100;
+}
+.strip ul li:nth-child(4):after{
+	content:"";
+}
+
+.down_pointer {
+	width: 35px;
+	height: 35px;
+	margin: 0 auto;
+	display:block;
+}
+.strip:before, .strip:after {
+	content: "\f35f";
+	font-family: "Ionicons";
+	font-size: 55px;
+	display: block;
+	margin: 0 auto;
+	position: absolute;
+	left:48.2%;
+}
+.strip:before {
+	top: -31px;
+	color: #93C765;
+}
+
+.strip:after {
+	top: 28px;
+	color: #fff;
+}
+
+
+/*==================
+	ABOUT OVO
+===================*/
+
+.about_cat_type i{
+	border-radius:100%;
+	border:#93C765 solid 1px;
+	width:100px;
+	height:100px;
+	display:block;
+	padding:20px 10px ;
+	margin:0 auto;
+
+}
+
+.about_cat_type i img{
+	width:56px;
+	height:56px;
+	display:block;
+	margin:0 auto;
+	
+}
+
+.about_cat_type h3{
+	font-size:18px;
+	font-weight:100;
+	color:#231F20;
+	margin-top:3px;
+	text-align:center;
+}
+
+/*==================
+	HOW IT WORK
+===================*/
+
+.howit_section{
+	min-height:600px;
+	background:url(../IMG/bg_02.jpg) no-repeat;
+	background-position:65% 66%
+}
+
+.darkgray_shade{
+	background:rgba(37,37,37,0.8);
+	min-height:400px;
+	position:relative;
+	
+		
+}
+
+.darkgray_shade:before{
+	content: "\f35f";
+	font-family: "Ionicons";
+	font-size: 55px;
+	display: block;
+	margin: 0 auto;
+	position: absolute;
+	left:48.2%;
+	bottom: -47px;
+	color: rgba(37,37,37,0.8);
+}
+
+/*==================
+	FEATURE
+===================*/
+
+.feature_icon_block i{
+	border-radius:100%;
+	border:#93C765 solid 1px;
+	width:80px;
+	height:80px;
+	display:block;
+	padding:20px 10px ;
+	margin:0 auto;
+
+}
+
+.feature_icon_block i img{
+	width:40px;
+	height:40px;
+	display:block;
+	margin:0 auto;
+	
+}
+
+.feature_icon_block h3{
+	font-size:18px;
+	font-weight:100;
+	color:#231F20;
+	margin:3px;
+	text-align:center;
+}
+
+.feature_icon_block p{
+	font-size:13px;
+	text-align:center;	
+	margin-top:2px;
+}
+
+/*==================
+	GET IT
+===================*/
+
+#getit{
+	background:url(../IMG/bg_03.png) repeat-y;
+}
+
+.get_left ul{
+ list-style:none;
+ margin:0px;
+ padding:0px;
+}
+
+.get_left ul li{
+	margin-bottom:30px;	
+}
+
+/*==================
+	PRICE
+===================*/
+
+
+.price{
+	background-image:url(../IMG/bg_03.png);
+	background-color:#99CC66;
+	background-repeat:repeat-y;
+}
+
+.price .left ul{
+	margin-top:107px;
+	list-style:none;	
+	
+}
+
+.price .left ul li{
+	margin-bottom:50px;
+
+}
+.price .left ul li h5{
+		font-weight:bold;
+		font-size:15px;
+		margin:0px;
+}
+
+.price .left ul li h3{
+		font-weight:100;
+		font-size:30px;
+		margin:0px;
+}
+
+
+.pirce_box{
+	border:#fff solid 1px;	
+	padding:0px !important;
+	
+}
+
+
+
+.pirce_box h3{
+	font-size:25px;
+	color:#231F20;
+	text-align:center;
+	display:block;
+	padding:10px 0px;
+	background:rgba(255,255,255,0.7);	
+}
+
+.pirce_box h4{
+	font-size:22px;
+	color:#fff;
+	text-align:center;
+	font-weight:200
+}
+
+.pirce_box ul{
+	margin:0px;
+	padding:0px;
+	list-style:none;	
+}
+
+.pirce_box ul li{
+	font-size:18px;
+	color:#fff;
+	font-weight:100;
+	margin-bottom:10px;
+	text-align:center;
+
+}
+
+
+
+/*==================
+	FEATURE
+===================*/
+
+.feature ul li{
+	
+	margin-bottom:25px;	
+}
+
+
+/*==================
+	REVIEW
+===================*/
+
+.review_block {
+	background:url(../IMG/bg_03.jpg) no-repeat;
+	background-size: cover;
+	opacity: 1;
+}
+.green_shade {
+	height: auto;
+	min-height: 500px;
+	background: rgba(147,199,101,0.8);
+}
+.review_block h1 {
+	font-size: 45px;
+	font-weight: 100;
+	margin: 0px;
+}
+.review_block h3 {
+	font-size: 40px;
+	font-weight: 100;
+	margin-bottom: 10px;
+	margin: 0px;
+}
+
+.client_review_block{
+	background:rgba(255,255,255,0.5);
+	padding:20px 50px;;
+	box-sizing:border-box;
+	text-align:center;
+}
+
+form, lable, input{
+	width:100%;	
+}
+
+form{
+	color:#fff;	
+}
+
+form input, form textarea{
+	margin-bottom:20px;	
+	padding:10px;
+	background:#666;
+	color:#999;
+	font-family:roboto;
+	border:none;
+	width:100%;
+	font-size:14px
+}
