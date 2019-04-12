@@ -1,0 +1,507 @@
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/buttons";
+@import "layout/flex";
+
+
+
+/*==================
+		GRID
+===================*/
+
+@import "layout/grid";
+
+
+/*==================
+		BODY
+===================*/
+
+html, body{
+	
+	margin:0px;
+	paddding:0px;
+	font-family:$fonts;
+	font-size:$font-size;
+	color:$gray;
+	line-height:22px;
+}
+
+
+h1{
+	font-size:$font-size * 2;
+}
+
+h2{
+	font-size:$font-size + 10;
+}
+
+h3{
+	font-size:$font-size + 8;
+}
+
+h4{
+	font-size:$font-size + 6;
+}
+
+h5{
+	font-size:$font-size + 4;
+}
+
+h6{
+	font-size:$font-size + 2;
+}
+
+a{
+	color:$darkgray;
+	text-decoration:none;
+	font-size:$font-size + 4;
+}
+
+/*==================
+       Helpers
+===================*/
+@import "helpers/snipts";
+
+
+/*==================
+		HOME
+===================*/
+
+//-- SIDE NAV --
+
+.side_nav{
+	
+	position:fixed;
+	height:100%;
+	overflow-x:hidden;
+	background:$white;
+	width:30%;
+	left:-100%;
+	top:0px;
+	z-index:350;
+	
+	@include xs-small{
+		width:80%;
+	}
+
+	#side_nav_close{
+	  float:right;
+	  padding-right:10px;
+
+
+	   i{
+         color:$white !important;
+         margin: 16px;
+	     
+	   }
+
+	}
+
+	.nav_top_pan{
+		background:$black;
+		padding:50px 0px;
+
+		.user_photo{
+			width:75px;
+			height:75px;
+			border-radius:100%;
+			margin:0 auto;
+			font-size:13px;
+			display:block;
+
+		}
+
+	}
+
+	.nav_list{
+		list-style:none;
+		margin:0px;
+		padding:0px;
+
+		li{
+
+			padding:10px; 
+			font-size: 10px !important;
+			@include border-bottom($bor-col_lit_gray solid $bor_default);
+			@include box_sizing;
+			@include transistion;
+
+			&:hover{
+			 opacity:0.8;
+			 @include transistion;
+			}
+
+			ul.sub_nav{
+				@extend .nav_list;
+				display:none;
+				@include transistion;
+
+				li{
+					border:none;
+					padding-left:40px;
+				}
+			}
+
+		}
+
+		i{
+			color:$gray;
+			padding-right:15px;
+			width:25px;
+			height:25px;
+			float:left;
+
+
+		}
+
+	}
+
+
+}
+
+
+// -- SCREEN COVER --
+
+#screen_cover{
+		position: fixed;
+	    width: 100%;
+	    height: 100%;
+	    background-color: rgba(0, 0, 0, 0.5);
+	    top: 0px;
+	    left: 0px;
+	    z-index: 300;
+	    display:none;
+}
+
+
+// --TOP NAV --
+
+.top_nav{
+	padding:30px 15px; 
+	text-align:center;
+	min-height:30px;
+	position:fixed;
+	box-sizing:border-box;
+	top:0px;
+	left:0px;
+	width:100%;
+	z-index:100;
+	background:$white;
+	@include border-bottom($bor-col_lit_gray solid $bor_default);
+
+	.flex_continer{
+		@include flexbox();
+		@include justify-content(space-between);
+	}
+
+	i{
+
+	  font-size:$font-size+10px;
+	}
+
+	.site_brand h1{
+		margin:$null_margin;
+		line-height: 18px;
+	}
+	
+}
+
+//--PAGE SLIDE --
+
+.page_slider{
+	margin-top:85px;
+	position:relative;
+
+}
+
+.owl-carousel{
+	position:relative;
+
+	.owl-dots{
+	position:absolute;
+	bottom:10px;
+	width:100%;
+	text-aling:center;
+
+	}
+	
+	.item {
+	 	min-height:220px;
+	 	text-align:center;
+	 	color:$white;
+		padding-top:80px;
+	 	position:relative
+	}
+
+	.cover{
+		position:absolute;
+		width:100%;
+		height:100%;
+		background:rgba(0,0,0,0.3);
+		left:0px;
+		top:0px;
+	}
+
+	.item_01{
+	 background:url(../img/slide/slide1.jpg) no-repeat;
+	 background-position:0 -100px;
+
+	 	@include xs-small{
+	 	 background-size:cover;
+	 	 background-position:0 0px !important;
+	 	}
+	}
+
+	.item_02{
+	 background:url(../img/slide/slide2.jpg) no-repeat;
+	 background-position:0 -277px;
+	 @include xs-small{
+	 	 background-size:cover;
+    	 background-position:0 0px !important;
+	 	}
+
+	}
+
+	.item_03{
+	 background:url(../img/slide/slide3.jpg) no-repeat;
+	 background-position:0 -130px;
+	 @include xs-small{
+	 	  background-size:cover;
+	 	  background-position:0 0px !important;
+	 	}
+	}
+
+	.owl-caption{
+		margin-top:100px !important;
+			h1{
+				
+					font-weight:$font-strong;
+					font-size:27px !important;
+				
+			
+			margin:$default-margin;
+		}
+
+		h5{
+			
+				font-size:$font-size +5;
+			    font-weight:100 !important;
+			
+			
+			margin:$default-margin +10;
+		}
+
+		.btn_sm{
+			@include btn-small($yellow, $white)
+		}
+
+	}
+
+}
+
+//--SERVICE --
+
+.service_content > div{
+	text-align:center;
+	
+	h5{
+	  font-weight:$font-light;
+	  font-size:$font-size+6;
+	  margin:5px;
+	  color:$black;
+	}
+
+	i{
+	  font-size:($font-size * 2)+ 8!important;
+	  color:$yellow;
+
+	}
+
+}
+
+.service_content .grid_col_6{
+	@include xs-small{
+		padding:12px !important;
+
+	}
+
+}
+
+//-- PRICE TABLE -
+
+.price_table{
+	
+	@include border($darkgray solid 1px);
+	@include border-radius(10px);
+	padding:10px;
+	@include box_sizing;
+	margin:0 auto;
+}
+
+.price_table_row{
+		@include justify-content(space-between);
+		padding:10px;
+		@include border-bottom($bor-col_lit_gray solid $bor_default);
+
+}
+	
+.price_table_row td{
+	font-size:$font-size+5;	
+
+}
+
+.price_table_row td:nth-child(2){
+	color:$yellow;
+	text-align:right;
+}
+
+
+//-- INFORMATION SECTION --
+
+.info_service{
+
+	@include flex-direction(column);
+
+	>div{
+		margin-bottom:20px;
+
+	}
+
+}
+
+.circle_icon{
+	
+	@include circle_icon (70px,70px,$white,$yellow);
+	margin:0 auto;
+
+	i{
+	 color:$white !important; vertical-align:middle;
+	 line-height: 72px;
+
+	}
+
+
+}
+
+//--FOOTER--
+
+.footer{
+		background:$darkgray;
+		padding:30px;
+		color:$white;
+		text-align:center;
+		font-weight:$font-light;
+		h1{
+			font-size:$font-size * 2;
+		}
+
+	.social_pan{
+	  margin:0 auto;
+	  @include xs-small{
+	   width:100% !important;
+	   padding:0px !important;
+
+	  }
+
+	}
+
+}
+
+.social_icon_list{
+
+		@include justify-content(space-between);
+		list-style:none;
+		margin:10px 0px;
+		padding:0px;
+
+
+		li a{
+
+			@include circle_icon(22px,22px,$white ,$trans);
+			padding:10px;
+			@include border($white solid 1px);
+
+			&:hover{
+			background:$black;
+			}
+			i{
+				color:$white !important;
+			}
+
+		}
+
+	}
+
+
+// GALLERY 
+
+.simplefilter{
+	
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	@include justify-content(space-between);
+
+	li:hover{
+
+		color:$black;
+	}	
+
+}
+
+.filtr-container{
+
+	@include flex-wrap(wrap);
+
+	.filtr-item{
+		margin-bottom:20px !important;
+
+		@include xs-small{
+			width:49%;
+
+		}
+	}
+
+}
+
+// CHEF
+
+.chef_social_icon_list{
+
+		@include justify-content(space-between);
+		list-style:none;
+		margin-top:10px;
+		margin-bottom:10px;
+		padding:0px;
+		margin:0 auto;
+		@include xs-small{
+			width:100%;
+
+		}
+
+
+
+		li a{
+
+			@include circle_icon(15px,15px,$gray ,$trans);
+			padding:10px;
+			@include border($gray solid 1px);
+
+			&:hover{
+			background:$white;
+			}
+			i{
+				color:$black !important;
+				font-size:15px !important;
+			}
+
+		}
+
+	}
+
+
+
+	
+	
+
+

@@ -1,0 +1,101 @@
+
+@import "../partials/variables";
+
+
+//--12 column grid system--
+
+$gird:(
+	col_1 : 8.3%,
+	col_2 : 16.6%,
+	col_3 : 25.0%,
+	col_4 : 33.3%,
+	col_5 : 41.6%,
+	col_6 : 49.9%,
+	col_7 : 58.2%,
+	col_8 : 66.5%,
+	col_9 : 75.0%,
+	col_10 : 83.3%,
+	col_11 : 91.6%,
+	col_12 : 100%,
+);
+
+
+
+@each $name, $value in $gird{
+	.grid_#{$name}{
+		width:$value;
+	}
+}
+
+
+// 	GRID PADDING
+.grid_col_1,.grid_col_2,.grid_col_3,.grid_col_4,.grid_col_5,
+.grid_col_6,.grid_col_7,.grid_col_8,.grid_col_9,.grid_col_10,
+.grid_col_11,.grid_col_12, .row{
+	padding-left:15px;
+	padding-right:15px;
+	box-sizing:border-box;
+
+	@media only screen and (max-width: 768px){
+		
+	}
+
+
+}
+
+.wrapper{
+	
+	width:1000px;
+	margin:0 auto;
+
+	@media only screen and (max-width: 960px){
+
+		width:850px;
+		margin:0 auto;
+
+	}
+
+	@media only screen and (max-width: 768px){
+
+		width:100%;
+
+	}
+
+
+
+}
+
+
+
+// BREAK POINT MIXINS
+
+
+@mixin md-large{
+  @media only screen and (max-width: 960px) {
+    @content;
+  }
+}
+
+@mixin sm-medium {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin xs-small {
+  @media only screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+
+// CONTENT PAN 
+
+.content{
+	padding-top:80px;
+
+	@include xs-small{
+		padding-top:40px;	
+	}
+
+}

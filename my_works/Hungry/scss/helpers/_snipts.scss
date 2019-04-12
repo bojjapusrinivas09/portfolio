@@ -1,0 +1,85 @@
+@import "../partials/variables";
+@import "../partials/mixins";
+@import "../layout/grid";
+@import "../layout/flex";
+
+//SECTION
+
+section{
+	padding:40px 0px;
+}
+
+.flex_continer{
+	@include flexbox()
+
+}
+
+.second_bg{
+	background:$lightgray;	
+}
+
+.bg_yellow{
+	background:$yellow;	
+}
+
+
+
+.img_responsive{
+	max-width:100%;
+	height:auto;
+}
+
+
+// PAGE TITLES
+.page_title{
+	font-size:$font-size + 8 !important;
+	weight:$font-strong;
+	color:$black;
+	text-align:center;
+	position:relative
+}
+
+.page_title_underline{
+	
+	display:block;
+	width:6%;
+	height:2px;
+	background-color:$yellow;
+	margin:0 auto;
+	margin-top:5px;
+	@include xs-small{
+	 width:15%;
+
+	}
+
+
+}
+
+.text-align{
+	text-align:center;
+}
+
+// FORM TABLE
+
+.form_table {
+
+		width:100%;
+
+		
+		.form_table tr, input, textarea{
+			width:100%;
+			@include border($bor-col_lit_gray solid $bor_default);
+			@include box_sizing;
+			padding:10px;
+			font-size:$font-size;
+			color:$gray;
+			margin:10px 0px;
+
+		}
+
+		textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {   
+    		border-color:$yellow;
+   		 box-shadow: 0 1px 1px rgba(229, 103, 23, 0.050) inset, 0 0 8px rgba(229, 103, 23, 0.3);
+    		outline: 0 none;
+		}
+}

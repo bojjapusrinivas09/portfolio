@@ -1,0 +1,96 @@
+@import "variables";
+
+
+
+// BORDER-RADIUS 
+
+@mixin border_radius($radius_val){
+	border-radius        : radius_val;
+	-webkit-border-radius: radius_val;
+	-moz-border-radius	 : radius_val;
+	-ms-border-radius	 : radius_val;
+}
+
+//Boxsizing
+
+@mixin box_sizing{
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+}
+
+//Border
+@mixin border($arg...){
+  border:$arg;
+  -webkit-border:$arg;
+  -moz-border:$arg;
+
+}
+
+@mixin border_bottom($arg...){
+  border-bottom:$arg;
+  -webkit-border-bottom:$arg;
+  -moz-border-bottom:$arg;
+
+}
+
+@mixin border_left($arg...){
+  border-left:$arg;
+  -webkit-border-left:$arg;
+  -moz-border-left:$arg;
+
+}
+
+@mixin border_right($arg...){
+  border-right:$arg;
+  -webkit-border-right:$arg;
+  -moz-border-right:$arg;
+
+}
+
+@mixin border_top($arg...){
+  border-top:$arg;
+  -webkit-border-top:$arg;
+  -moz-border-top:$arg;
+
+}
+
+//Border radius
+
+@mixin border-radius($radius){
+	border-radius:$radius;
+	-webkit-border-radius:$radius;
+	-ms-border-radius:$radius;
+	-moz-border-radius:$radius;
+	-o-border-radius:$radius;
+}
+
+
+// CIRCLE ICON BACKGROUND
+
+@mixin circle_icon($wid, $hig, $col, $bgcol){
+    width:$wid;
+    height:$hig;
+    color:$col;
+    background:$bgcol;
+    border-radius:100%;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    display:block;
+}
+
+
+//  TRANSISTION EFFECTS
+
+@mixin transistion {
+  
+    transition: all 0.2s easein;
+    -webkit-transition: all 0.2s easein;
+    -moz-transistion: all 0.2s easein;
+    -ms-transistion: all 0.2s easein;
+
+
+}
+
+
