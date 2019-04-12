@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+
+.page, .flex-box, 
+.col_left, 
+.col_right, 
+#gallery, 
+.shopcart_flex, 
+.coupen_table, 
+.cart_total {
+	display: -webkit-flex;
+	-webkit-display: flex;
+	-moz-display: flex;
+	-ms-display: flex;
+}
+
+.sidebar_header {
+	display: -webkit-flex;
+	-webkit-display: flex;
+	-moz-display: flex;
+	-ms-display: flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-ms-justify-content: space-between;
+}
+
+.socialslider, 
+.two_coloum, 
+.col_left, 
+.col_right, 
+.product_flex_box, 
+#video_bolck, 
+.prof_two, 
+.maling_tb_row, 
+.info_form {
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-ms-justify-content: space-between;
+}
+
+.team_social_icon {
+	justify-content: center;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+}
+
+.demo_block, 
+.contact_box {
+	justify-content: space-around !important;
+	-webkit-justify-content: space-around !important;
+	-moz-justify-content: space-around !important;
+	-ms-justify-content: space-around !important;
+}
+
+#gallery {
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.simplefilter {
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	justify-content: space-around;
+	
+}
+
+.footer_social_icon {
+	justify-content: center;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+
+.blog_details {
+	align-items: flex-start;
+}
+
+.shop_list {
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+.shopcart_flex {
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-ms-justify-content: space-between;
+}
+
+.coupen_table, 
+.retu_cust_log_box {
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-ms-justify-content: space-between;
+}
+
+.cart_total td {
+	flex-grow: 1;
+}

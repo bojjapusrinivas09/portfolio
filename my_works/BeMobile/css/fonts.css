@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*======================
+		FONT IMPORT
+======================*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+
+
+/*====================
+	 FONT STYLEING
+====================*/
+
+h1,h2,h3,h4,h5,h6,a,li,table,tr,td,span,p,input, lable{
+color:#000;
+margin:5px 0px;
+padding:5px 0px;
+line-height:nomal; 
+font-style:normal;
+font-family: 'Lato', Roboto,sans-serif;
+
+}
+
+
+h1{
+ font-size:24px;
+}
+
+h2{
+ font-size:22px;
+}
+h3{
+ font-size:20px;
+}
+h4{
+ font-size:18px;
+}
+h5{
+ font-size:16px;
+ 
+}
+h6{
+ font-size:14px;
+}
+
+p, label, input, select{
+	font-size: 16px !important;
+	color: #95A5A6 !important;
+	line-height: 22px !important;
+	font-weight: 400 !important;
+	white-space:pre-wrap	;
+}
+.small{
+	font-size:12px;
+	color: #95A5A6;
+	
+}
+
+
+

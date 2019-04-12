@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/*================
+		SCREEN
+=================*/
+
+#screen {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;sdfdf
+	box-sizing: border-box;
+}
+.continer_full {
+	width: 100%;
+}
+.continer {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.page {
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+.row {
+	padding: 10px 20px;
+	box-sizing: border-box;
+	overflow:auto;
+	clear:both;
+}
+.left_slider {
+	position:fixed;
+	top: 0px;
+	background: #fff;
+	left: -100%;
+	z-index:200 !important;
+	height:100% !important;
+	width:20%;
+	overflow-x:hidden;
+	background:#fff;
+	
+}
+
+.ls_wapper{
+	
+}
+
+.right-slider{
+	position:fixed;
+	top: 0px;
+	background: #fff;
+	right:-100%;
+	z-index:200 !important;
+	height:100% !important;
+	width:20%;
+	overflow-x:hidden;
+	background:#fff;
+	
+}
+
+/*=============
+	righr pan
+==============*/
+
+.right_pan {
+	flex-grow: 1;
+}
+.top_pan {
+	height: 50px;
+}
+
+.two_coloum{
+	padding:35px  0px;	
+}
+
+.col_left, .col_right{
+	flex-grow:1;
+	overflow:hidden;
+	padding:10px;
+	box-sizing:border-box;
+	
+}
