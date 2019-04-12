@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Magic Printers</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"/>
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+<style>
+* {
+	margin: 0 auto;
+	transition:all 0.3 liner;
+	-webkit-transition:all 0.3s liner;
+	-moz-transition:all 0.3s liner;
+}
+
+body{
+	background:#13C4B1;
+	font-family: "Lora", serif;
+	color:#fff;
+	font-size:14px;
+	
+}
+
+h1{
+	font-size:60px;
+ 	
+}
+
+.top_pan {
+	min-height: 70px;
+	background: #000;
+	box-sizing: border-box;
+	padding: 25px;
+	margin-bottom: 50px;
+}
+
+.profile_img{
+	width:50px;
+	height:50px;
+	border-radius:100%;
+	background:url(img/profile_img.jpg) no-repeat;
+	background-size:cover;
+	background-color:#fff;	
+	float:left;
+	margin-top: -13px;
+	
+}
+
+.name_deg{
+	float:left;
+	margin-left:10px;
+	margin-top:-10px;
+}
+.mobile_pan {
+	width: 100%;
+}
+.mobile {
+	display: block;
+	margin: 0 auto;
+	width: 350px;
+	position: relative;
+}
+.screen {
+	Width: 321px;
+	height: 481px;
+	position: absolute;
+	background: #fff;
+	top: 78px;
+	left: 13px;
+	padding:0px;
+}
+
+iframe{
+	margin:0px;
+	adding:0px;
+   overflow-x: hidden;
+	
+}
+
+.title_pan{
+		position:absolute;
+		left:50px;
+		top:120px;
+		width:350px;
+
+}
+
+.title{
+	position: absolute;
+   top: 30px;
+   left: 37px;
+		
+}
+
+.divider{
+	width:100%;
+	border-bottom:#fff solid 1px;
+	-webkit-border-bottom:#fff solid 1px;
+	-moz-border-bottom:#fff solid 1px;
+}
+
+ul li {
+	margin:5px;	
+}
+
+.info_block{
+	float:right;	
+}
+a{
+	color:#fff;
+	text-decoration:none;	
+}
+
+i{
+	margin-right:10px;	
+}
+
+.device_icon{
+	 width: 120px;
+    height: 250px;
+    position: absolute;
+    right: 180px;
+    top: 210px;	
+}
+
+.device{
+	width:32px;
+	height:32px;
+	padding:20px;
+	border:#fff solid 1px;
+	border-radius:100%;	
+	opacity:0.5;
+}
+.device:hover{
+	opacity:1;	
+}
+
+</style>
+</head>
+<body>
+<div class="top_pan">
+	<div class="profile_img">   </div>
+   <div class="name_deg">
+   	<h2>BE Mobiles</h2>
+      <p>Simple Interface </p>
+   </div>
+   
+   <div class="info_block">
+   <i class="phone"><img src="img/phone.png" width="16" height="16"/> &nbsp; 044-222-6895</i>
+   <i class="phone"><img src="img/mail.png" width="16" height="16"/> &nbsp;<a href="mailto:contact@bemobile.com"/> contact@bemobile.com</a></i>
+   	
+   </div>
+   
+   
+</div>
+<div class="mobile_pan">
+  <div class="mobile"> <img src="img/mobile_phone.png"/>
+    <div class="screen">
+    <iframe frameborder="0px" width="320" height="481" src="index.html"></iframe>
+    </div>
+  </div>
+  
+  <div class="device_icon">
+  		<div class="device" title="Desktop">
+       <a href="index.html" target="_blank"><img src="img/desktop.png" /></a>
+      </div>
+       <br/>
+       <br/>
+       
+       <div class="device" title="tab">
+       <a href="tab_view_presentation.html" target="_blank"><img src="img/tab_icon.png" /></a>
+      </div>
+       
+  
+  </div>
+  
+  
+</div>
+</body>
+</html>
